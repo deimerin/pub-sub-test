@@ -11,7 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
-  const URL = 'ws://159.223.134.18:1888'
+  const URL = 'wss://159.223.134.18:1888'
 
   const clientOptions = {
     clientId: 'PUB1'
@@ -22,7 +22,7 @@ function App() {
 
   function sendMessage(){
     
-    client.publish('TOPIC1/test', inputMessage.current.value);
+    client.publish('TOPIC1', inputMessage.current.value);
     toast(`Message sent: ${inputMessage.current.value}`)
     inputMessage.current.value = '';
     
