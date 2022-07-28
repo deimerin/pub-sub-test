@@ -11,7 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
-  const URL = 'wss://159.223.134.18:1888'
+  const URL = 'ws://159.223.134.18:1888'
 
   const clientOptions = {
     clientId: 'PUB1'
@@ -36,8 +36,8 @@ function App() {
     <Form>
 
       <InputGroup>
-        <InputGroup.Text>Topico 1</InputGroup.Text>
-          <Form.Control placeholder='abc' as="textarea" ref={inputMessage}/>
+        <InputGroup.Text>Topic 1</InputGroup.Text>
+          <Form.Control placeholder='Message' as="textarea" ref={inputMessage}/>
       </InputGroup>
 
       <div className="d-grid gap-2">
