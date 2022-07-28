@@ -1,5 +1,3 @@
-# pub-sub-test
-
 ## Implementacion de un entorno de intercambio de mensajes utilizando el patron de diseno Pub/Sub y el protocolo MQTT
 
 ### Publishers:
